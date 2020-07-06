@@ -1,0 +1,120 @@
+#content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+} 
+
+#content #statusBoard {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  width: 60%;
+  height: 100%;
+}
+
+
+#content #statusBoard div {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+
+  border: var(--title-color) 0.05rem solid;
+  background-color: white;
+}
+
+
+
+
+
+
+#content #statusBoard div p {
+  display: flex;
+  justify-content: space-between;  
+}
+
+#content #statusBoard div p h5 {
+  font-size: 2rem;
+}
+#content #statusBoard div p h5 + div.queueStatus {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+
+}
+
+#content #statusBoard div p h5 + div.queueStatus span,
+#content #statusBoard div p h5 + div.queueStatus button {
+  margin-right: 0.3rem;
+  color: var(--title-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#content #statusBoard div p h5 + div.queueStatus button {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  cursor: pointer;
+}
+
+#content #statusBoard div p h5 + div.queueStatus button:hover {
+  color: var(--primary-color);
+}
+
+#content #statusBoard div p span + span {
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+#content #tablesBoard {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  width: 35%;
+  height: 100%;
+}
+
+#content #tablesBoard input[type="checkbox"]{
+  display: none;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+#content #tablesBoard input[type="checkbox"]:checked + label {
+  background-color: var(--primary-color);
+}
+
+#content #tablesBoard label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+
+  cursor: pointer;
+
+  background-color: rgb(51, 180, 51);
+}
+
+
+#content #tablesBoard label span{
+  width: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  
+}
+

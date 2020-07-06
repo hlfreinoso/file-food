@@ -1,0 +1,99 @@
+#content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#content main {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#content main img {
+  margin-bottom: 20px;
+}
+
+#content main h1 {
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+#content main form {
+  margin-top: 50px;
+}
+
+#content main form * + *{
+  margin-bottom: 10px;
+}
+
+#content main form div.field {
+  display: flex;
+  flex-direction: column;  
+}
+
+#content main form div.field input[type=email],
+#content main form div.field input[type=password] {
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#content main form p {
+  color: red;
+}
+
+#content main form button {
+  width: 100%;
+  height: 62px;
+  padding-left: 10px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  border: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  font-size: 20px;
+  color: white;
+  transition: 0.2s;
+  
+}
+
+#content main form button:hover {
+  opacity: 0.8;
+}
+
+#content main form button span {
+  background: rgba(0, 0, 0, 0.08);
+  width: 72px;
+  height: 100%;
+  
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+
+#content main p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 24px;
+  
+}
+
+#content main p a {
+  text-decoration: none;
+}
+
+#content aside {
+  width: 50%;
+}

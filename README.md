@@ -1,5 +1,5 @@
 # Fila-Food
-Web / Mobile - Fila Food - React, React Native, Typescript, Node.js
+Web - Fila Food - React, React Native, Typescript, Node.js
 </br>
 Projeto desenvolvido para o Mega Hack 3ª Edição promovido pela Shawee no desafio SEBRAE / MCTIC - Setor de Alimentação Fora do Lar.
 </br>

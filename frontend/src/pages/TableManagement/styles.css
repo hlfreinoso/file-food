@@ -1,0 +1,80 @@
+#content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+} 
+
+#content #tablesList {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+
+#content #tablesList div.table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  border-radius: 0.3rem;
+  border: 1px solid var(--primary-color);
+}
+
+#content #tablesList div.table label.tableHeader {
+  padding: 0.6rem 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#content #tablesList div.table div.tableContent {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+}
+
+#content #tablesList div.table div.tableContent * {
+  margin-bottom: 5px;
+}
+
+#content #tablesList div.table div.tableContent input[type="text"] {
+  height: 3rem;
+  padding: 0.4rem 0.4rem;
+  width: 30rem;
+}
+
+#content #tablesList div.table div.tableContent button {
+  border: none;
+  background-color: var(--title-color);
+  height: 6rem;
+  width: 8rem;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+#content #tablesList div.table input[type="checkbox"]{
+  display: none;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+#content #tablesList div.table input[type="checkbox"]:checked + div.tableContent {
+  height: 160px;
+  opacity: 1;
+  visibility: visible;
+  padding: 0.5rem;
+}
